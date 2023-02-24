@@ -97,7 +97,13 @@ header {
     width: 30px;
 }
 .links {
-    margin: 20px;
+    margin: 15px;
+}
+.stackFront {
+    max-width: auto;
+    max-height: auto;
+    width: 60px;
+    margin: 10px 15px;
 }
 #box1 {
     padding: 0px;
@@ -141,8 +147,20 @@ header {
 #box7 {
     margin-top: -140px;
 }
+#front {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 #foot {
     height: 70px;
+}
+iframe {
+    max-width: auto;
+    max-height: auto;
+    width: 100%;
 }
 footer {
     width: 100%;
