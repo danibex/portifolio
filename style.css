@@ -230,7 +230,7 @@ header {
 #foot {
     height: 70px;
 }
-#fotoPortifolio {
+#portifolio {
     max-width: auto;
     max-height: auto;
     height: 200px;
@@ -262,28 +262,28 @@ sobrepor div ou imagem
 position: relative;
 z-index: 10;
 */
-    @media (min-width: 901px) {
+    @media (min-width: 1048px) {
         .projects {
             display: grid;
             grid-template-columns: repeat(4, 25%);
             grid-template-rows: repeat(3, 300px);
         } 
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1047px) {
         .projects {
             display: grid;
             grid-template-columns: repeat(3, 33.3%);
             grid-template-rows: repeat(4, 300px);
         }
     }
-    @media (max-width: 700px) {
+    @media (max-width: 780px) {
         .projects {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(6, 300px);
         }
     }
-    @media (max-width: 500px) {
+    @media (max-width: 580px) {
         .projects {
             display: grid;
             grid-template-columns: repeat(1, 100%);

@@ -65,9 +65,22 @@
                 <h1>Projetos:</h1>
                 <div class="containerSon">
                     <div class="projects">
+                        <!--
+                            Menu-Mxq
+                            ViaCepApi
+                            Reservar maquina
+                            Rick e Morthy API
+                            Random Cats
+                            Projeto Chamado
+                            Cronometro
+                            GoogleGlass
+                            Calculadora Iphone
+                            Verificador De Idade
+                            Momento do dia
+                         -->
                         <div class="grids" id="project1">
-                            <div class="fotoGif"><img id="fotoPortifolio" src="./img/projetos/protifolio.png" alt=""></div>
-                            <div class="tituloProjeto"><h2>Portifólio</h2></div>
+                            <div class="fotoGif" onmouseenter="preVisualizacao()" onmouseleave="voltar()"><img class="previa" id="portifolio" src="./img/projetos/protifolio.png" alt="" ></div>
+                            <div class="tituloProjeto"><h2>Google Glass WebSite</h2></div>
                             <div class="Visualizar"><a class="botoesProjetos visualizar" href="">Visualizar Página</a><a class="botoesProjetos codigo" href="">Código</a></div>
                             <div class="iconesProjeto">icones stacks</div>
                         </div>
@@ -147,5 +160,17 @@
             <a href="https://www.linkedin.com/in/daniel-santana-dev/" target="_blank" class="links"><img src="./img/linkedin.png" alt="" class="icone"></a><a href="https://www.instagram.com/daniel_santana98/" target="_blank" class="links"><img src="./img/instagram.png" alt="" class="icone"></a><a href="https://api.whatsapp.com/send?phone=5571986384879" target="_blank" class="links"><img src="./img/whatsapp.png" alt="" class="icone"></a><a href="mailto:danielivam96@gmail.com?subject=Hello%20again" class="links"><img src="./img/gmail.png" alt="" class="icone"></a>
         </div>
     </footer>
+<script>
+let img = document.getElementById("portifolio")
+    function preVisualizacao() {
+        img.src = "./gifs/googleGlass.gif"
+        img.style.width = "250px"
+        console.log("ENTROU!")
+    }
+    function voltar(caminhoOld) {
+        img.src=`./img/projetos/protifolio.png`
+        console.log("SAIU!")
+    }
+</script>
 </body>
 </html>
