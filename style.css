@@ -109,6 +109,41 @@ header {
     width: 60px;
     margin: 10px 15px;
 }
+.containerSon {
+    width: 100%;
+    border: solid 1px black;
+}
+@media (min-width: 901px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 300px);
+    } 
+}
+@media (max-width: 900px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(4, 300px);
+    }
+}
+@media (max-width: 700px) {
+    .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(6, 300px);
+    }
+}
+.grids {
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    border: solid 1px black;
+}
+.projects {
+    width: 100%;
+    margin: 0px;
+}
 #box1 {
     padding: 0px;
     margin: 0px;
@@ -169,6 +204,19 @@ header {
 #foot {
     height: 70px;
 }
+
+
+/*
+#fotoPerfil:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    width: 1000px;
+} 
+*/
+
+
 iframe {
     max-width: auto;
     max-height: auto;
