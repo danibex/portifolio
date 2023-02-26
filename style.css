@@ -14,6 +14,7 @@ body {
 }
 h1, h2, h3 {
     text-align: center;
+    color: grey;
 }
 h1 {
     margin-bottom: 5px;
@@ -27,6 +28,9 @@ header {
     align-items: center;
     height: 100px;
     align-self: flex-end;
+}
+.nome {
+    color: #000;
 }
 .contateMe {
     text-decoration: none;
@@ -111,38 +115,59 @@ header {
 }
 .containerSon {
     width: 100%;
+    margin: 2px;
     border: solid 1px black;
-}
-@media (min-width: 901px) {
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(3, 300px);
-    } 
-}
-@media (max-width: 900px) {
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(3, 33.3%);
-        grid-template-rows: repeat(4, 300px);
-    }
-}
-@media (max-width: 700px) {
-    .projects {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(6, 300px);
-    }
 }
 .grids {
     align-items: center;
     text-align: center;
     margin: 5px;
     border: solid 1px black;
+    display: grid;
+    grid-template-rows: auto 35px auto auto;
 }
 .projects {
     width: 100%;
     margin: 0px;
+}
+.fotoGif {
+    width: 100%;
+    margin: 0px;
+    box-shadow: 1px 1px 5px;
+}
+.fotoGif:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    box-shadow: none;
+}
+/**/
+.tituloProjeto {
+    width: 100%;
+    margin-bottom: 0px;
+    color: rgb(128, 128, 128);
+}
+.grids {
+    font-size: small;
+}
+.botoesProjetos {
+    margin: 5px;
+    border: solid 0.5px gray;
+    padding: 4px;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    font-weight: bolder;
+}   
+.visualizar {
+    background-color: rgba(21, 168, 21, 0.767);
+    color: #fff;
+}
+.codigo {
+    background-color: rgba(0, 102, 255, 0.808);
+    color: #fff;
 }
 #box1 {
     padding: 0px;
@@ -185,6 +210,7 @@ header {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: white;
     margin-bottom: 70px;
+    font-weight: bolder;
 }
 #box7 {
     margin-top: -140px;
@@ -204,7 +230,11 @@ header {
 #foot {
     height: 70px;
 }
-
+#fotoPortifolio {
+    max-width: auto;
+    max-height: auto;
+    height: 200px;
+}
 
 /*
 #fotoPerfil:hover {
@@ -232,3 +262,31 @@ sobrepor div ou imagem
 position: relative;
 z-index: 10;
 */
+    @media (min-width: 901px) {
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(3, 300px);
+        } 
+    }
+    @media (max-width: 900px) {
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 33.3%);
+            grid-template-rows: repeat(4, 300px);
+        }
+    }
+    @media (max-width: 700px) {
+        .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(6, 300px);
+        }
+    }
+    @media (max-width: 500px) {
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(7, 300px);
+            }
+    }
