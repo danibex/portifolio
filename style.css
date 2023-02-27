@@ -149,6 +149,7 @@ header {
 }
 .grids {
     font-size: small;
+    border: solid 1px black;
 }
 .botoesProjetos {
     margin: 5px;
