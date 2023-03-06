@@ -173,6 +173,7 @@ header {
     padding: 0px;
     margin: 0px;
     align-self: center;
+    width: 80%;
 }
 #box2 {
     padding: 10px 50px;
@@ -190,7 +191,7 @@ header {
 #box4 {
     background-color: #fff;
     margin: 20px;
-    width: 84%;
+    width: 80%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-bottom: 30px;
