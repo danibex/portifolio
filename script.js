@@ -1,9 +1,11 @@
 let img = document.getElementById("portifolio")
+let fotoGif = document.querySelectorAll('.fotoGif')
 
-    function preVisualizacao() {
-        img.src = "./gifs/googleGlass.gif"
-        img.style.width = "250px"
-    }
-    function voltar(caminhoOld) {
-        img.src=`./img/projetos/protifolio.png`
-    }
+
+fotoGif.forEach((e, index) => {
+    let imagem = document.createElement('img') 
+    imagem.classList.add('previa')
+    imagem.id = 'portifolio'
+    e.appendChild(imagem)
+    imagem.src = `./img/projetos/projeto${index + 1}.png`
+})
